@@ -17,4 +17,5 @@ eval "$(/Users/andy/.local/bin/mise activate zsh)"
 
 #stuff
 alias lsf='facad'
+alias nix-rebuild='darwin-rebuild switch --flake ~/nix#mbp'
 export PATH="$PATH:/usr/local/go/bin"
