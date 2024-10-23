@@ -70,7 +70,7 @@ in
       system.stateVersion = 5;
 
       # The platform the configuration will be used on.
-      nixpkgs.hostPlatform = "aarch64-darwin";
+      nixpkgs.hostPlatform = "<architecture>-darwin";
     };
   in
   {
@@ -83,7 +83,7 @@ in
           nix-homebrew = {
           enable = true;          
           enableRosetta = true;
-          user = "andy";
+          user = "<username with brew prefix>";
           autoMigrate = true;
           };
         }
