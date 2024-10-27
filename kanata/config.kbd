@@ -1,0 +1,17 @@
+(defsrc
+ caps
+ spc
+)
+
+(defalias
+ delctrl (tap-hold 100 100 bspc lctl)
+)
+
+(defalias
+ spcshft (tap-hold 120 120 spc lsft)
+)
+
+(deflayer base
+  @delctrl
+  @spcshft
+)

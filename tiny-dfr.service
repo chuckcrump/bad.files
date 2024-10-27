@@ -1,0 +1,12 @@
+[Unit]
+Description=Tiny DFR Service
+Before=gdm.service
+After=network.target
+
+[Service]
+ExecStart=/home/$USER/.nix-profile/bin/tiny-dfr
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
+
