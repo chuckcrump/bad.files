@@ -7,7 +7,7 @@ Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
 Environment=DISPLAY=:0
 Environment=HOME=/home/andy
 Type=simple
-ExecStart=/usr/bin/kanata --cfg /home/andy/.config/kanata/config.kbd
+ExecStart=<path to kanata> --cfg <path to config.kbd>
 Restart=no
 
 [Install]
