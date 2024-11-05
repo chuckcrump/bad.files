@@ -11,7 +11,7 @@
       ./apple-silicon-support
       #./stylix.nix
       ./gpu-asahi.nix
-      ./garbage.nix
+      #./garbage.nix
     ];
   
 
