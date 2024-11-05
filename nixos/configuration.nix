@@ -9,8 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./apple-silicon-support
-      #inputs.home-manager.nixosModules.default
-      ./stylix.nix
+      #./stylix.nix
       ./gpu-asahi.nix
       ./garbage.nix
     ];
