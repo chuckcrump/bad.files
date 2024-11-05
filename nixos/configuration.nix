@@ -111,11 +111,11 @@
      ];
    };
 
-  home-manager = {
-    users = {
-    "andy" = import ./home.nix;
-    };
-  };
+  #home-manager = {
+  #  users = {
+  #  "<username>" = import ./home.nix;
+  #  };
+  #};
 
   fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "Recursive" ]; })
@@ -124,17 +124,17 @@
   ];
 
   #systemstuff
-  systemd.services.kanata = {
-    description = "Kanata Key Remapper";
-    after = [ "network.target" ];
+  #systemd.services.kanata = {
+  #  description = "Kanata Key Remapper";
+  #  after = [ "network.target" ];
+  #
+  #  serviceConfig = {
+  #    ExecStart = "${pkgs.kanata}/bin/kanata --cfg /home/andy/.config/kanata/config.kbd";
+  #    Restart = "no";
+  #  };
 
-    serviceConfig = {
-      ExecStart = "${pkgs.kanata}/bin/kanata --cfg /home/andy/.config/kanata/config.kbd";
-      Restart = "no";
-    };
-
-    wantedBy = [ "multi-user.target" ];
-  };
+  #  wantedBy = [ "multi-user.target" ];
+  #};
 
   zramSwap.enable = true;
 
