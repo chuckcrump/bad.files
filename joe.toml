@@ -1,0 +1,41 @@
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+[[blocks.segments]]
+  type = 'text'
+  style = 'plain'
+  foreground = 'blue'
+  background = 'transparent'
+  template = ' '
+
+[[blocks.segments]]
+  type = 'path'
+  style = 'plain'
+  background = 'transparent'
+  foreground = 'blue'
+  max_depth = 5
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+[[blocks.segments]]
+  type = 'text'
+  style = 'plain'
+  foreground = 'magenta'
+  background = 'transparent'
+  template = ' '
+
+[transient_prompt]
+  background = "transparent"
+  foreground = "blue"
+  template = ". "
+
+
