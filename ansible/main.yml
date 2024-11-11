@@ -1,0 +1,23 @@
+---
+- name: For Me
+  hosts: local
+  become: yes  # Allows Ansible to run tasks with sudo privileges
+
+  tasks:
+    - name: Update and upgrade all packages
+      dnf:
+        name: "*"
+        state: latest
+        update_cache: yes
+
+    - name: Install essential packages
+      dnf:
+        name:
+          - fish
+          - kitty
+          - neovim
+          - zoxide
+          - tmux
+          - fzf
+        state: present
+
