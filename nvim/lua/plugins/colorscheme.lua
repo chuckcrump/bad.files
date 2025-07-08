@@ -1,10 +1,10 @@
 return {
-    "folke/tokyonight.nvim",
+    "nickkadutskyi/jb.nvim",
     lazy = false,
     priority = 1000,
     opts = {},
     config = function()
-      require("tokyonight").setup()
-      vim.cmd.colorscheme "tokyonight"
+      require("jb").setup({})
+      vim.cmd.colorscheme "jb"
     end
 }

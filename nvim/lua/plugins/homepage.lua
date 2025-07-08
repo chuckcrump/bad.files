@@ -12,6 +12,9 @@ return {
         shortcut = {
           { desc = '󰚰 Update', group = '@property', action = 'Lazy update', key = 'u' },
           { desc = ' Search', group = '@property', action = 'Telescope find_files', key = 'f'},
+        },
+        footer = {
+         'This is a footer 󱜙'
         }
       }
     }
